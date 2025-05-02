@@ -1,123 +1,69 @@
-<div align="center">
-  <br />
-    <a href="https://youtu.be/dGHFV_RMGag" target="_blank">
-      <img src="https://i.postimg.cc/tJsYLQcP/test1.jpg" alt="Project Banner">
-    </a>
+![dashboard](https://github.com/user-attachments/assets/7a08a1d4-0162-4c4a-a5e6-47684a4f9c07)
+
+# 💰 SpendSage: AI Finance Tracker
+
+**SpendSage** is an AI-powered personal finance tracker that helps users manage their expenses smartly and efficiently. With intuitive visualizations, category-based tracking, and intelligent financial insights, SpendSage offers a modern alternative to traditional expense management tools.
+
+🔗 **Live Demo**: [spendsage-ai-finance-tracking.vercel.app](https://spendsage-ai-finance-tracking.vercel.app/)
+
+---
+
+## 🚀 Features
+
+- ✨ **AI-Based Financial Insights**
+  - Get personalized recommendations and visual summaries powered by AI.
   
-  <br />
+- 🧾 **Expense Tracking**
+  - Add and manage expenses with ease.
+  - Categorize transactions (Food, Travel, Health, etc.).
+  
+- 📊 **Dashboard Analytics**
+  - View visual breakdowns of your spending patterns.
+  - Track daily, weekly, and monthly financial trends.
 
-  <div>
-    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
-    <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextdotjs" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
-  </div>
+- 🔐 **User Authentication**
+  - Secure login system using Firebase Authentication.
+  - Personalized dashboard per user.
 
-  <h3 align="center">Finan Smart</h3>
+- 💬 **Chat-Style Entry (Optional Feature)**
+  - Input expenses in a natural language format (e.g., "Spent 300 on groceries").
 
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@albertmends" target="_blank"><b>Your YouTube Channel</b></a>. Join the community!
-    </div>
-</div>
+---
 
-## 📋 <a name="table">Table of Contents</a>
+## 📂 Tech Stack
 
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Assets & Code](#snippets)
-6. 🚀 [More](#more)
+| Tech           | Description                      |
+|----------------|----------------------------------|
+| **Next.js**    | React framework for frontend and backend |
+| **Tailwind CSS** | Utility-first CSS for styling |
+| **Firebase Auth** | Secure authentication for users |
+| **MongoDB**    | NoSQL database for storing user expenses |
+| **OpenAI API** | AI for generating financial insights (if applicable) |
+| **Chart.js / Recharts** | Data visualization of expense analytics |
 
-## 🚨 Tutorial
+---
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@albertmends/videos" target="_blank"><b>Code with Albert</b></a>.
+## 🏗️ Project Structure
 
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
 
-## <a name="introduction">🤖 Introduction</a>
+---
 
-Built with the latest Next.js and TypeScript, Finan Smart is an advanced AI financial advice tool. It allows users to input their income, expenses, and budgets, and receive personalized financial advice based on their financial data. This project is perfect for those looking to learn how to integrate AI-driven insights and financial management into a Next.js application.
+## 📦 Installation
 
-If you're getting started and need assistance or face any bugs, join our active Discord community. It's a place where people help each other out.
-
-<a href="https://discord.com/channels/1221368900579754074/1221368901162631243" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e"  /></a>
-
-## <a name="tech-stack">⚙️ Tech Stack</a>
-
-- Next.js
-- TypeScript
-- OpenAI API
-- Tailwind CSS
-
-## <a name="features">🔋 Features</a>
-
-👉 **Income and Expense Input**: Allows users to input their income and expenses.
-
-👉 **Budget Management**: Enables users to manage their budgets effectively.
-
-👉 **Personalized Financial Advice**: Provides detailed financial advice based on user-specific financial data using OpenAI's GPT-4 model.
-
-👉 **Responsive Design**: Ensures a seamless experience across different devices.
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-
-**Cloning the Repository**
+1. **Clone the repo**
 
 ```bash
-git clone https://github.com/mendsalbert/ai-finance-trackingt.git
-cd ai-finance-tracking
-```
+git clone https://github.com/yourusername/spendsage-ai-finance-tracking.git
+cd spendsage-ai-finance-tracking
+MONGODB_URI=your_mongodb_connection_string
+NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+OPENAI_API_KEY=your_openai_api_key (if AI features used)
 
-**Installation**
 
-Install the project dependencies using npm:
-
-```bash
-npm install
-```
-
-**Set Up Environment Variables**
-
-Create a new file named `.env` in the root of your project and add the following content:
-
-```env
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=p
-CLERK_SECRET_KEY=
-
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
-NEXT_PUBLIC_OPENAI_API_KEY=
-
-NEXT_PUBLIC_DATABASE_URL=
-
-```
-
-Replace the placeholder values with your actual OpenAI credentials. You can obtain these credentials by signing up on the [OpenAI website](https://openai.com/).
-
-**Running the Project**
-
-```bash
 npm run dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
-
-## <a name="snippets">🕸️ Assets & Code</a>
-
-The repository includes all the assets and code you need to get started with Finan Smart. Follow along with our YouTube tutorial for a step-by-step guide.
-
-## <a name="more">🚀 More</a>
-
-For more information and additional resources, check out our YouTube channel and join our Discord community for support and discussions.
